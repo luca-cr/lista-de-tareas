@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import loguito from './imagenes/logo1.png'
+import ListaDeTareas from './componentes/ListaDeTareas.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='logo-contenedor'>
+        <img 
+          src={loguito}
+          className='frecc-logo'
+          alt='imagen'
+        />
+      </div>
+      
+      <div className='tareas-lista-principal'>
+        <h1>Mis Lesiones</h1>
+        <ListaDeTareas />
+      </div>
     </div>
   );
 }
