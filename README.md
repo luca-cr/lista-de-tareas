@@ -9,9 +9,9 @@
 ### Description
 Es una app de lista de tareas desarrollada en react. El primer componente "ListaDeTareas" se encuentra en App.js. Este componente contiene 2 componentes hijos:
 
-"Formulario" que tiene una funcion onSubmit={agregarTarea} donde verifica si el input contiene el texto de la tarea a agregar, en caso de ser true crea una variable donde agrega la nueva tarea a un arreglo y despues lo envia al hook useState "setTareas"
+1) "Formulario" que tiene una funcion onSubmit={agregarTarea} donde verifica si el input contiene el texto de la tarea a agregar, en caso de ser true crea una variable donde agrega la nueva tarea a un arreglo y despues lo envia al hook useState "setTareas"
 
-2 "Tarea" este componente se llama con la funcion .map que usa la salida del hook useState, la tarea tiene sus props que son necesarios para el funcionamiento de la app como: id, key, texto,completada, eliminar y completar, estas 2 ultimas contienen funciones que se envian al componente Tarea.js.
+2) "Tarea" este componente se llama con la funcion .map que usa la salida del hook useState, la tarea tiene sus props que son necesarios para el funcionamiento de la app como: id, key, texto,completada, eliminar y completar, estas 2 ultimas contienen funciones que se envian al componente Tarea.js.
 
 Formulario.js:
 
